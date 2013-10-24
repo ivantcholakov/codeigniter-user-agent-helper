@@ -21,7 +21,7 @@ A Usage Example for Makihng an Adaptive HTML Boilerplate
 --------------------------------------------------------
 
 ```php
-if (!function_exists('template_support_oldie')) {
+if (!function_exists('template_enable_oldie')) {
 
     /**
      * This function decides whether additional assets within a html template
@@ -33,7 +33,7 @@ if (!function_exists('template_support_oldie')) {
      * @license The MIT License, http://opensource.org/licenses/MIT
      * @return boolean
      */
-    function template_support_oldie() {
+    function template_enable_oldie() {
 
         $ie_min_supported = config_item('ie_min_supported_version');
 
