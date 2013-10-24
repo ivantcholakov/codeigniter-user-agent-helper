@@ -4,8 +4,8 @@ User Agent Helper Functions
 This set of helper functions is aimed for convenience in use the CodeIgniter's
 User_agent library. Tested on CodeIgniter 2.1.4 and CodeIgniter 3.0-dev (October, 2013).
 
-Intallation
------------
+Installation
+------------
 
 Place the file user_agent_helper.php within your application/helpers folder.
 
