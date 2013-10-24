@@ -35,7 +35,9 @@ if (!function_exists('template_support_oldie')) {
      */
     function template_support_oldie() {
 
-        if (config_item('ie_min_supported_version') < 9) {
+        $ie_min_supported = config_item('ie_min_supported_version');
+
+        if ($ie_min_supported < 9) {
 
             if (config_item('load_assets_by_ua_detection')) {
 
@@ -45,7 +47,9 @@ if (!function_exists('template_support_oldie')) {
 
                 if ($browser['is_ie']) {
 
-                    if ($browser['ie_version'] >= config_item('ie_min_supported_version')) {
+                    if ($browser['ie_version'] < 9 &&
+                        $browser['ie_version'] >= $ie_min_supported) {
+
                         return true;
                     }
 
@@ -63,3 +67,6 @@ if (!function_exists('template_support_oldie')) {
 
 }
 ```
+
+Author: Ivan Tcholakov <ivantcholakov@gmail.com>, 2012-2013.  
+License: The MIT License (MIT), http://opensource.org/licenses/MIT
