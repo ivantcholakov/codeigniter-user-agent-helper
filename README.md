@@ -17,7 +17,7 @@ $this->load->helper('user_agent');
 var_dump(user_agent());
 ```
 
-A Usage Example for Makihng an Adaptive HTML Boilerplate
+A Usage Example for Making an Adaptive HTML Boilerplate
 --------------------------------------------------------
 
 ```php
